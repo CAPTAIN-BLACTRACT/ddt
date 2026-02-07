@@ -1,1 +1,24 @@
-<p>color-tool works!</p>
+<h2>Color Converter</h2>
+<div class="preview" [style.background-color]="hex()">
+
+</div>
+
+<div class="inputs">
+  <div class="group">
+    <label>Hex</label>
+    <input [ngModel]="hex()" (ngModelChange)="updateFromHex($event)" placeholder="#000000">
+
+  </div>
+
+  <div class="group">
+
+    <label>RGB</label>
+    <div class="rgb-inputs">
+      <input type="number" [ngModel]="r()" (ngModelChange)="updateFromRgb($event, g(),b())">
+      <input type="number" [ngModel]="g()" (ngModelChange)="updateFromRgb(r(),$event,b())">
+      <input type="number" [ngModel]="b()" (ngModelChange)="updateFromRgb(r(),g(),$event)">
+
+    </div>
+  </div>
+
+</div>
