@@ -14,9 +14,9 @@
 
     <label>RGB</label>
     <div class="rgb-inputs">
-      <input type="number" [ngModel]="r()" (ngModelChange)="updateFromRgb($event, g(),b())">
-      <input type="number" [ngModel]="g()" (ngModelChange)="updateFromRgb(r(),$event,b())">
-      <input type="number" [ngModel]="b()" (ngModelChange)="updateFromRgb(r(),g(),$event)">
+      <input type="number" min="0" max="255" [ngModel]="r()" (ngModelChange)="updateFromRgb($event, g(),b())">
+      <input type="number" min="0" max="255" [ngModel]="g()" (ngModelChange)="updateFromRgb(r(),$event,b())">
+      <input type="number" min="0" max="255" [ngModel]="b()" (ngModelChange)="updateFromRgb(r(),g(),$event)">
 
     </div>
   </div>

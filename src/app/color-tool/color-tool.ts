@@ -26,7 +26,7 @@ export class ColorTool {
     }
   }
   updateFromRgb(r:number, g:number, b:number){
-    this.r.set(r); this.g.set(g) this.b.set(b);
+    this.r.set(r); this.g.set(g); this.b.set(b);
 
     const toHex = (n:number)=>{
         const hex = Math.max(0,Math.min(255,n)).toString(16);

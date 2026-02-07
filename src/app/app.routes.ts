@@ -5,7 +5,7 @@ import {Base64Tool} from './base64-tool/base64-tool';
 
 export const routes: Routes = [
   {path:'', redirectTo: 'json', pathMatch: 'full'},
-  {path:'json', component:'JsonTool'},
-  {path:'color', color:'ColorTool'},
-  {path:'base64', color:'Base64Tool'}
+  {path:'json', component:JsonTool},
+  {path:'color', component:ColorTool},
+  {path:'base64', component:Base64Tool}
 ];
