@@ -1,1 +1,20 @@
-<p>base64-tool works!</p>
+<h2>Base64 Encoder/Decoder</h2>
+<div class="grid">
+  <div class="pane">
+    <label>Plane Text </label>
+    <textarea [ngModel]="plainText()"
+      (ngModelChange)="encode($event)"
+      placeholder="type your text here"></textarea>
+  </div>
+
+  <div class="pane">
+    <label>Base64 Text</label>
+    <textarea
+      [ngModel]="base64Text()"
+      (ngModelChange)="decode($event)"
+      placeholder="Results appear here...."></textarea>
+
+  </div>
+
+</div>
+

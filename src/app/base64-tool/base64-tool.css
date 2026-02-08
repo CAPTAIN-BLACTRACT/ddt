@@ -1,0 +1,21 @@
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+  height:60vh;
+}
+.pane{
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+textarea{
+  flex-grow:1;
+  background:#252526;
+  border:1px solid #333;
+  color:#d4d4d4;
+  padding:10px;
+  resize:none;
+  font-family:monospace;
+}
