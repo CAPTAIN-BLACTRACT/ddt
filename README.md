@@ -1,4 +1,12 @@
-# Ddt
+# DDT - Dev Diverse Tools
+
+DDT (Dev Diverse Tools) is a collection of web-based utilities designed to assist developers with various tasks. It provides convenient tools for handling Base64 encoding/decoding, working with colors, and formatting JSON data.
+
+- **Base64 Tool**: Encode and decode Base64 strings.
+- **Color Tool**: Work with color representations and conversions.
+- **JSON Tool**: Format and validate JSON data.
+
+You can access the deployed application here: https://devdiversetools.vercel.app
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.4.
 
